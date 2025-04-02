@@ -1,0 +1,30 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/humans/pedestrian/protos/Pedestrian.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.029647663597399024 -0.971088087640235 0.2368732616536672 6.02682070820054
+  position -13.79122481613586 4.08086630190039 3.811187340840461
+  follow "PEDESTRIAN"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 44 44
+}
+DEF PEDESTRIAN Pedestrian {
+  translation 0.5400000000000003 4.409999999999997 1.27
+  rotation 0 0 1 3.14
+  name "PEDESTRIAN"
+  controller "Random_controller"
+  controllerArgs [
+    ""
+  ]
+}
